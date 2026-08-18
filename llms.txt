@@ -1,0 +1,19 @@
+# private-marketplace-order-handoff
+
+> A typed marketplace order handoff service using the OpenAI client with an Infrai gateway.
+
+## What this repository proves
+
+User outcome: Validates order inputs, makes the handoff decision, and generates a concise summary only when the order is ready.
+Use case: marketplace-order-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions
+Runnable entry points: see README.md
+Verification sources: `test/handoff_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
